@@ -8,10 +8,10 @@ const Title = styled.div`
   color: #320876;
 `;
 
-export const Footer: FunctionComponent = () => {
+export const Header: FunctionComponent = () => {
   return (
     <>
-      <Title>footer-1</Title>
+      <Title>header-1</Title>
     </>
   );
 };

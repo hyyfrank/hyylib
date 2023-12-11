@@ -20,3 +20,5 @@ add to vscode setting.json
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
+
+<!-- "type": "commonjs", change to module if want to build to dist folder. -->

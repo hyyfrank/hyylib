@@ -6,9 +6,9 @@
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
     },
-    "type": "module",
     "repository": "git://github.com/hyyfrank/hyylib",
     "version": "1.0.0",
+    "type": "module",
     "source": [
         "src/components/Header.tsx",
         "src/components/Footer.tsx"
@@ -16,7 +16,7 @@
     "scripts": {
         "build": "rollup -c",
         "build-watch": "rollup -c -w",
-        "lint": "eslint src --fix --ext .ts,.tsx"
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
     },
     "eslintConfig": {
         "extends": "react-app"

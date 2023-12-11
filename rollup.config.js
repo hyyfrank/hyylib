@@ -15,7 +15,7 @@ const config =  {
         {
             dir: "dist",
             format: "es",
-            sourcemap: true
+            sourcemap: false
           }
     ],
     plugins: [
