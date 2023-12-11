@@ -6,11 +6,9 @@
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
     },
-    "type": "commonjs",
+    "type": "module",
     "repository": "git://github.com/hyyfrank/hyylib",
     "version": "1.0.0",
-    "main": "dist/index.cjs.js",
-    "module": "dist/index.esm.js",
     "source": [
         "src/components/Header.tsx",
         "src/components/Footer.tsx"

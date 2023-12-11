@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components';
 
-function Header() {
-  return <h2>this is header</h2>;
-}
+const Title = styled.div`
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+  color: #832231;
+`;
 
-export default Header;
+export const Header: FunctionComponent = () => {
+  return (
+    <>
+      <Title>header-1</Title>
+    </>
+  );
+};

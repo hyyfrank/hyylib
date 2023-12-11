@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components';
 
-function Footer() {
-  return <h2>this is footer</h2>;
-}
+const Title = styled.div`
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+  color: #320876;
+`;
 
-export default Footer;
+export const Footer: FunctionComponent = () => {
+  return (
+    <>
+      <Title>footer-1</Title>
+    </>
+  );
+};
