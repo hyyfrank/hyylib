@@ -34,7 +34,7 @@ const config =  {
                 // babel 默认不支持 ts 需要手动添加
                 extensions: [
                     ...DEFAULT_EXTENSIONS,
-                    '.ts',
+                    '.ts'
                 ],
             }),
             del({ targets: ['dist/*'] }),
