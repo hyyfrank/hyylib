@@ -1,27 +1,35 @@
 module.exports = {
-    parser: '@typescript-eslint/parser', // 指定parser
-    plugins: ['@typescript-eslint'], // 启用插件
-    extends: [
-        'plugin:react/recommended', // 使用react的推荐规则
-        'plugin:@typescript-eslint/recommended', // 使用推荐的规则，来自@typescript-eslint/eslint-plugin
-        'plugin:prettier/recommended', // 使用eslint-plugin-prettier推荐的配置，注意需要在最后一个
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
     ],
-    parserOptions: {
-        ecmaVersion: latest, // 让parser按更新的语法来解析
-        sourceType: 'module', // 让parser按ESM解析
-        ecmaFeatures: {
-            jsx: true, // 支持解析JSX
-        },
+    "overrides": [
+        {
+            "env": {
+                "node": true
+            },
+            "files": [
+                ".eslintrc.{js,cjs}"
+            ],
+            "parserOptions": {
+                "sourceType": "script"
+            }
+        }
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
     },
-    rules: {
-        // 此处书写需要覆盖的配置
-        // 例如，"@typescript-eslint/explicit-function-return-type": "off",
-        'semi': 'error',
-        '@typescript-eslint/no-var-requires': 'off',
-    },
-    settings: {
-        react: {
-            version: 'detect', // 让eslint-plugin-react自动检测react版本
-        },
-    },
-};
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
+    "rules": {
+    }
+}
