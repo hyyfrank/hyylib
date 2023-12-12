@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { Button } from '@mui/material';
 import styled from 'styled-components';
 
 const Title = styled.div`
@@ -8,10 +9,11 @@ const Title = styled.div`
   color: #320876;
 `;
 
-export const Header: FunctionComponent = () => {
+export const Footer: FunctionComponent = () => {
   return (
     <>
-      <Title>header-1</Title>
+      <Title>footer-1</Title>
+      <Button variant="contained">Click</Button>
     </>
   );
 };
