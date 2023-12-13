@@ -23,9 +23,10 @@ add to vscode setting.json
 
 <!-- "type": "commonjs", change to module if want to build to dist folder. -->
 
-1. Customize Type define generate
+1. Customize Type define generate[?]
 2. publish to azure npm[done]
 3. load from an create react app and test load in demand[done]
 4. add MUI[done]
-5. add storybook
-6. add theme provider and cusomize how to override the component.
+5. add storybook[done]
+6. add theme provider and cusomize how to override the component.?
+7.
