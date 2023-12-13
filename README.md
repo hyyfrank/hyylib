@@ -29,4 +29,5 @@ add to vscode setting.json
 4. add MUI[done]
 5. add storybook[done]
 6. add theme provider and cusomize how to override the component.?
-7.
+7. BEM convention
+8. if the component file is getting bloated with styled components then maybe you should start creating smaller components rather than making a styled.ts file, we use atoms and modules, organisms and containers to make all the file small.
