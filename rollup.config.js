@@ -1,16 +1,16 @@
 import babel from '@rollup/plugin-babel';
 import del from 'rollup-plugin-delete';
-import pkg from './package.json' assert {type: "json"};
 import resolve from '@rollup/plugin-node-resolve'
 import { DEFAULT_EXTENSIONS } from '@babel/core'
 import commonjs from '@rollup/plugin-commonjs'
 import rollupTypescript from 'rollup-plugin-typescript2'
+import { componentEntrypoint } from "./src/utils/entry"
 
 const env = process.env.NODE_ENV
 
 
 const config =  {
-    input: pkg.source,
+    input: componentEntrypoint,
     output: [
         {
             dir: "dist",

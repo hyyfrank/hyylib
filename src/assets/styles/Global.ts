@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle, css } from 'styled-components'
-import { device } from './BreakPoints'
+import { device } from './breakpoints'
 export const GlobalStyles = createGlobalStyle`
  
 /* Box sizing rules */

@@ -10,10 +10,6 @@
     "repository": "git://github.com/hyyfrank/hyylib",
     "version": "1.0.0",
     "type": "module",
-    "source": [
-        "src/components/atoms/Header.tsx",
-        "src/components/atoms/Footer.tsx"
-    ],
     "main": "src/index.ts",
     "scripts": {
         "build": "rollup -c",
